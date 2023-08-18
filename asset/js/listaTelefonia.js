@@ -20,11 +20,6 @@ const telefonia = [
       telefone: '81 3101-0201'
     },
     {
-      no_unidade: 'Secretaria de Saúde de Caruaru',
-      ft_unidade: 'secretaria de saúde de caruaru',
-      telefone: '81 3101-0201'
-    },
-    {
       no_unidade: 'UPA Boa Vista',
       ft_unidade: 'upa boa vista',
       telefone: '81 3101-0256'
