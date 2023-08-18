@@ -1,5 +1,25 @@
 const telefonia = [
     {
+      no_unidade: 'Marcação de Consulta (Área Descoberta)',
+      ft_unidade: 'marcação de consulta (área descoberta)',
+      telefone: '0800 281 7080'
+    },
+    {
+      no_unidade: 'Ouvidoria Secretaria de Saúde de Caruaru',
+      ft_unidade: 'ouvidoria secretaria de saúde de caruaru',
+      telefone: '0800 281 2080'
+    },
+    {
+      no_unidade: 'Ouvidoria Secretaria de Saúde de Caruaru',
+      ft_unidade: 'ouvidoria secretaria de saúde de caruaru',
+      telefone: '81 3101-0468'
+    },
+    {
+      no_unidade: 'Secretaria de Saúde de Caruaru',
+      ft_unidade: 'secretaria de saúde de caruaru',
+      telefone: '81 3101-0201'
+    },
+    {
       no_unidade: 'Secretaria de Saúde de Caruaru',
       ft_unidade: 'secretaria de saúde de caruaru',
       telefone: '81 3101-0201'
@@ -118,6 +138,11 @@ const telefonia = [
       no_unidade: 'Farmácia São Francisco',
       ft_unidade: 'farmácia são francisco',
       telefone: '81 3101-0376'
+    },
+    {
+      no_unidade: 'Centro de Saúde Amelia de Pontes',
+      ft_unidade: 'centro de saúde amelia de pontes',
+      telefone: '81 3101-0384'
     },
 ];
 
