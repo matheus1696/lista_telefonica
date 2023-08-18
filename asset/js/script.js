@@ -1,0 +1,3 @@
+function pressionou(e) {
+    search()
+}

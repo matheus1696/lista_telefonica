@@ -1,6 +1,4 @@
 for (let i = 0; i < telefonia.length; i++) {
-    console.log(telefonia[i])
-
     tbody = document.querySelector('tbody');
     tbody.innerHTML +=`<tr class="list"><td>${telefonia[i].no_unidade}</td><td>${telefonia[i].telefone}</td></tr>`
 }
