@@ -4,54 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Telefônica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="asset/js/listaTelefonia.js"></script> 
+    <script src="asset/js/listaTelefonia.js"></script>
 </head>
 <body>
 
-    <main class="w-screen">
-        <header class="p-2 bg-gradient-to-r from-green-800 via-green-900 to-green-800">
-            <div class="grid grid-cols-12 justify-center justify-items-center items-center md:w-9/12 m-auto ">
-                <div class="col-span-4">
-                    <img src="asset/img/new_logo-04.png" alt="" class="w-40">
+    <main>
+        <header class="row flex justify-content-center align-items-center bg-color">
+            <div class="col-12 py-4">
+                <div class="col-12 text-center" id="logo">
+                    <img src="asset/img/new_logo-04.png" alt="" width="250">
                 </div>
-                <div class="col-span-8">
-                    <div class="text-center text-white">
-                        <h1>Lista Telefônica</h1>
-                        <h4>Unidades de Saúde de Caruaru</h4>
-                    </div>
+            </div>
+
+            <div class="col-12 row justify-content-center align-items-center py-4">
+                <div class="text-center">
+                    <p>Lista Telefônica</p>
+                    <p>Unidades de Saúde de Caruaru</p>
                 </div>
             </div>
         </header>
 
-        <section class="py-14 p-2 bg-gradient-to-r from-neutral-200 via-neutral-100 to-neutral-100 shadow-md shadow-black-100">
-            <div class="grid grid-cols-12 gap-2 md:gap-4 justify-center items-center md:w-9/12 m-auto">
-                <div class="col-span-7 md:col-span-8 lg:col-span-9">
-                    <input type="text" class="w-full p-2 shadow-md shadow-black-50 focus:shadow focus:shadow-green-900 focus:outline focus:outline-green-800 rounded-md" id="input" placeholder="Digite o nome da unidade" onkeyup="pressionou(event)">
+        <section>
+
+            <div class="row justify-content-center align-items-center py-4">
+                <div class="col-12 col-md-8">
+                    <input type="text" class="form-control text-center" id="input" placeholder="Digite o nome da unidade" onkeyup="pressionou(event)">
                 </div>
-                <button class="col-span-5 md:col-span-4 lg:col-span-3 bg-green-900 hover:bg-green-600 shadow-md shadow-black-50 text-white p-2 text-center rounded-md" onclick="search()">Buscar Unidade</button>
             </div>
         </section>
 
-        <section class="my-5">
-            <div class="grid grid-cols-8 justify-center items-center md:w-9/12 m-auto">                
-                <div class="col-span-12 p-2">
-                    <table class="w-full">
-                        <thead class="bg-green-900 text-white text-center">
-                            <tr>
-                                <th class="py-3">Unidade</th>
-                                <th>Contato</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-center" id="tbody">
+        <section class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-8">
+                <table class="table table-striped table-hover">
+                    <thead class="table-success text-center">
+                        <tr>
+                            <th>Unidade</th>
+                            <th class="col-5">Contato</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center" id="tbody">
     
-                        </tbody>
-                    </table>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
    
     <script src="asset/js/search.js"></script>
     <script src="asset/js/script.js"></script>
