@@ -90,12 +90,12 @@ const telefonia = [
       telefone: '81 3101-0366'
     },
     {
-      no_unidade: 'CAPS III AD',
+      no_unidade: 'CAPS Mandacaru',
       ft_unidade: 'caps ad',
       telefone: '81 3101-0368'
     },
     {
-      no_unidade: 'CAPS',
+      no_unidade: 'CAPS Crescendo com Dignidade',
       ft_unidade: 'caps',
       telefone: '81 3101-0369'
     },
@@ -105,7 +105,7 @@ const telefonia = [
       telefone: '81 3101-0370'
     },
     {
-      no_unidade: 'Lacian',
+      no_unidade: 'Lacian - Laboratório de ',
       ft_unidade: 'lacian',
       telefone: '81 3101-0371'
     },
@@ -170,7 +170,6 @@ const telefonia = [
     { no_unidade: 'USF Cachoeira Seca', ft_unidade: 'usf cachoeira seca', telefone: '8131010414'},
     { no_unidade: 'USF Caiuca II', ft_unidade: 'usf caiuca ii', telefone: '8131010415'},
     { no_unidade: 'USF Rafael', ft_unidade: 'usf rafael', telefone: '8131010416'},
-    { no_unidade: 'Zonose', ft_unidade: 'zonose', telefone: '8131010417'},
     { no_unidade: 'USF Terra Vermelha', ft_unidade: 'usf terra vermelha', telefone: '8131010418'},
     { no_unidade: 'USF Malhada Barreiras', ft_unidade: 'usf malhada barreiras', telefone: '8131010419'},
     { no_unidade: 'USF Juá', ft_unidade: 'usf juá', telefone: '8131010420'},
@@ -188,5 +187,7 @@ const telefonia = [
     { no_unidade: 'USF Liberato 1 ', ft_unidade: 'usf liberato 1 ', telefone: '8131010268'},
     { no_unidade: 'USF Sinhazinha', ft_unidade: 'usf sinhazinha', telefone: '8131010269'},
     { no_unidade: 'USF Riachão', ft_unidade: 'usf riachão', telefone: '8131010270'},
+    
+    { no_unidade: 'Zonose', ft_unidade: 'zonose', telefone: '8131010417'},
 ];
 
