@@ -1,15 +1,13 @@
 let telefonia = []
 
 function loadPost() {
-  fetch('http://10.1.3.8/api/contact')
+  fetch('http://10.101.10.96/api/contact')
       .then(function(resultado){
           return resultado.json()
       }).then(function(json) {
             json.sort(function(a,b) {
                 return a.no_unidade < b.no_unidade ? -1 : a.no_unidade > b.no_unidade ? 1 : 0;
             });
-            
-            console.log(json)
           for (let i = 0; i < json.length; i++) {
             if (json[i].con_principal == "Principal") {
                 tbody = document.querySelector('tbody');
@@ -17,8 +15,7 @@ function loadPost() {
                 
                 telefonia.push(json[i])
             }           
-          }
-          
+          }          
       })
       .catch(function(error) {
           console.log(error)
