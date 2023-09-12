@@ -10,3 +10,7 @@ p{
 .bg-color{
     background-color: #285D35;
 }
+
+.list{
+   transition: opacity .5s;  
+}
