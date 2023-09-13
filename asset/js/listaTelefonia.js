@@ -4,7 +4,7 @@ let telefonia = [] //Variável de Listagem dos Contatos Externos
 function loadPost() {
 
     //Conexão com API
-    fetch('http://10.101.10.96/api/contact') //URL da API do Sistema GEST360
+    fetch('http://131.196.5.251:60001/api/contact') //URL da API do Sistema GEST360
         //Retorno da API
         .then(function(contatos){
             return contatos.json()
@@ -23,7 +23,7 @@ function loadPost() {
                     //Atribuindo Contato na Váriavel
                     telefonia.push(json[i])
                 }           
-            }          
+            }  
         })
         .catch(function(error) {
             console.log(error)
