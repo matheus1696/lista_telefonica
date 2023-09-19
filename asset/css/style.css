@@ -2,6 +2,11 @@ body{
     overflow-x: hidden;
 }
 
+footer{
+    height: 100px;
+    margin-top: 75px;
+}
+
 p{
     margin: 0;
     color: white;
