@@ -14,7 +14,7 @@ function search() {
         //Atribuindo Indice de Telefonia
         let unidade = telefonia[i].ft_unidade;
         //Realizando Busca na Lista de Contatos
-        let posicao = unidade.indexOf(search);        
+        let posicao = unidade.indexOf(search);  
 
         //Verificação e Atribuição de CSS        
         listItem.style.opacity = "1"; //Atribuindo Opacidade 100%
@@ -25,7 +25,7 @@ function search() {
             } else {                             
                 listItem.style.opacity = "0";
                 setTimeout(function () {                     
-                    listItem.style.display = "none";      
+                    listItem.style.display = "none";  
                 },500)
             }
         } else {            

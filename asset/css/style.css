@@ -12,5 +12,5 @@ p{
 }
 
 .list{
-   transition: opacity .5s;  
+    transition: opacity .3s;
 }
