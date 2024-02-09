@@ -128,7 +128,6 @@ let telefonia = [
                 for (let i = 0; i < json.length; i++) {
                     //Verificação dos Contatos Principais da Unidade
                     if (json[i].type_contact == "Main") {
-
                         //Atribuindo Contato na Váriavel
                         telefonia.push(json[i])
                     }
@@ -140,12 +139,19 @@ let telefonia = [
     }
 
 function showContact() {
-    setTimeout(function () {        
+    setTimeout(function () {
+        /*
+            for (let i = 0; i < telefonia.length; i++) {
+                    //Exibindo em tela
+                    tbody = document.querySelector('tbody');
+                    tbody.innerHTML += `<tr class="list"><td>${telefonia[i].title}</td><td>${telefonia[i].contact}</td></tr>`
+            }
+        */
+
         for (let i = 0; i < telefonia.length; i++) {
-            //Verificação dos Contatos Principais da Unidade
                 //Exibindo em tela
-                tbody = document.querySelector('tbody');
-                tbody.innerHTML +=`<tr class="list"><td>${telefonia[i].title}</td><td>${telefonia[i].contact}</td></tr>`          
+                contacts = document.getElementById('contacts');
+                contacts.innerHTML += `<div class="list"> ${telefonia[i].title} - ${telefonia[i].contact} </div>`;
         }
     },2000)
 }
