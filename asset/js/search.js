@@ -7,6 +7,8 @@ function search() {
     //Atribuindo Classe das Linhas a uma Váriavel
     let listItems = document.getElementsByClassName('list');
 
+    let indice = [];
+
     //Estrutura de Repetição
     for (let i = 0; i < listItems.length; i++) {
         //Atribuindo Indice de ListItems
@@ -22,14 +24,26 @@ function search() {
         if (search !== "") {
             if (posicao !== -1) {                
                 listItem.style.display = "";
+                indice.push(telefonia[i].filter)
             } else {                             
                 listItem.style.opacity = "0";
                 setTimeout(function () {                     
                     listItem.style.display = "none";  
                 },500)
+                let splice = indice.indexOf(telefonia[i].filter);
+                indice.slice(splice);
             }
         } else {            
             listItem.style.display = "";
         }
     }
+
+    if (indice.length < 1) {
+        setTimeout(function () {
+            document.querySelector('#indice').classList.remove('hidden')
+        },550)
+    } else {     
+        document.querySelector('#indice').classList.add('hidden')
+    }
 }
+
