@@ -151,7 +151,7 @@ function showContact() {
         for (let i = 0; i < telefonia.length; i++) {
                 //Exibindo em tela
                 contacts = document.getElementById('contacts');
-                contacts.innerHTML += `<div class="flex flex-col justify-center items-center bg-green-700 shadow-md rounded-md list"> <p> ${telefonia[i].title} </p> <p class="mt-5"> ${telefonia[i].contact} </p> </div>`;
+                contacts.innerHTML += `<div class="flex flex-col justify-center items-around bg-green-900 shadow-2xl hover:bg-green-700 rounded-md list"> <p> ${telefonia[i].title} </p> <p class="mt-5"> ${telefonia[i].contact} </p> </div>`;
         }
     },2000)
 }
