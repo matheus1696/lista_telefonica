@@ -39,12 +39,14 @@ function search() {
     }
 
     if (search !== "") {
-        if (indice.length === 0) {
+        if (indice.length == 0) {
             setTimeout(function () {
                 document.querySelector('#indice').classList.remove('hidden')
             },550)
+            console.log('Não tem')
         } else {     
             document.querySelector('#indice').classList.add('hidden')
+            console.log('Tem')
         }
     }
 }
