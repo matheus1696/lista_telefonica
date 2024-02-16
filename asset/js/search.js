@@ -38,12 +38,14 @@ function search() {
         }
     }
 
-    if (indice.length < 1) {
-        setTimeout(function () {
-            document.querySelector('#indice').classList.remove('hidden')
-        },550)
-    } else {     
-        document.querySelector('#indice').classList.add('hidden')
+    if (search !== "") {
+        if (indice.length === 0) {
+            setTimeout(function () {
+                document.querySelector('#indice').classList.remove('hidden')
+            },550)
+        } else {     
+            document.querySelector('#indice').classList.add('hidden')
+        }
     }
 }
 
