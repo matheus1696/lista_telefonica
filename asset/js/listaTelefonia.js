@@ -116,7 +116,7 @@ let telefonia = [
     function loadPost() {
 
         //Conexão com API
-        fetch('https://techsupport.saudecaruaru.pe.gov.br/api/contact') //URL da API do Sistema TechSupport
+        fetch('https://infosaude.saudecaruaru.pe.gov.br/api/contact') //URL da API do Sistema TechSupport
             //Retorno da API
             .then(function(contacts){
                 return contacts.json()
